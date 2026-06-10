@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>影视搜索 - 日本高清影视</title>
+  <meta name="description" content="日本高清影视站内搜索，支持按影片标题、地区、年份、分类和标签查找高清影视资源。">
+  <meta name="keywords" content="影视搜索,日本高清影视,免费视频,电影推荐,高清资源,在线观看,热门影视,日本电影,视频播放,流畅播放,影视资源">
+  <link rel="stylesheet" href="./assets/app.css">
+  <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-logo" href="./index.html" aria-label="日本高清影视首页">
+        <span class="logo-mark">映</span>
+        <span>日本高清影视</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="展开导航" data-menu-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-site-nav>
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link" href="./list-1.html">全部影片</a>
+      <a class="nav-link" href="./category-1.html">分类</a>
+      <a class="nav-link" href="./ranking.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero search-hero">
+      <div>
+        <span>站内搜索</span>
+        <h1>搜索高清影视资源</h1>
+        <p>输入影片标题、地区、年份、类型或标签，快速找到对应的静态详情页和播放入口。</p>
+        <div class="search-panel">
+          <input type="search" placeholder="搜索影片、地区、年份、类型" data-search-input aria-label="搜索影片">
+        </div>
+      </div>
+    </section>
+    <section class="content-section">
+      <div class="section-heading row-heading">
+        <div>
+          <span>搜索结果</span>
+          <h2>影片匹配</h2>
+        </div>
+        <a class="more-link" href="./list-1.html">全部影片</a>
+      </div>
+      <div class="movie-grid" data-search-results></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <a class="footer-logo" href="./index.html">日本高清影视</a>
+      <p>发现日本最新的高清影视内容，提供热门电影、电视剧和视频资源推荐。免费在线观看，高品质流畅播放体验。</p>
+      <div class="footer-links">
+        <a href="./list-1.html">全部影片</a>
+        <a href="./ranking.html">热门排行</a>
+        <a href="./search.html">站内搜索</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/movie-data.js"></script>
+  <script src="./assets/site.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
